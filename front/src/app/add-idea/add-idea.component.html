@@ -1,0 +1,15 @@
+
+<div class="no-style" style="margin-left: 4px">
+  <div class="container">
+      <h1>Agregar idea</h1>
+      <form #ideaForm="ngForm" (ngSubmit)="save(ideaForm.value)">
+        <div class="form-group">
+          <label for="contenido">Contenido</label>
+          <input type="text" class="form-control" id="contenido" [(ngModel)]="idea.contenido" name="contenido" required>
+        </div>
+
+        <button type="submit" class="btn btn-success">Enviar</button>
+
+      </form>
+      <button class="btn btn-warning" style="float: right;" [routerLink]="['../']">Volver</button>
+  </div>
