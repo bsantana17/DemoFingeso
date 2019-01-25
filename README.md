@@ -1,1 +1,4 @@
-DemoFingeso
+App de ideas
+=================
+Backend: Spring
+Frontend: AngularJS
